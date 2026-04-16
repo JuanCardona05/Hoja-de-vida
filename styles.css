@@ -898,6 +898,37 @@ body {
     margin-bottom: 2rem;
 }
 
+.project-actions {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.project-action-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.85rem 1.25rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border: 1px solid rgba(102, 126, 234, 0.45);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.project-action-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(102, 126, 234, 0.28);
+}
+
+.project-action-secondary {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.14);
+}
+
 /* Educación Section */
 .education {
     padding: 100px 2rem;
@@ -1147,6 +1178,19 @@ body {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .cloud-projects {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .project-actions {
+        flex-direction: column;
+    }
+
+    .project-action-button {
+        width: 100%;
     }
 
     .skills-content {
