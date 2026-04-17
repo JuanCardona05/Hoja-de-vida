@@ -646,10 +646,14 @@ body {
 
 /* Contact Section */
 .contact {
-    padding: 100px 2rem;
+    padding: 56px 2rem 72px;
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
+}
+
+.contact .section-header {
+    margin-bottom: 2.4rem;
 }
 
 .contact-content {
